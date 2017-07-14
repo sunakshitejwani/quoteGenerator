@@ -12,19 +12,45 @@ var quotes=[
 'Look at the sparrows. they do not know what they will do in the next moment. Let us literally live from moment to moment.'
 ];
 var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', '#472E32', '#BDBB99', '#77B1A9', '#73A857'];
+var randomNumber=0;
 function newQuote(){
 
-	var randomNumber = 	Math.floor(Math.random()*(quotes.length));
+     randomNumber = 	Math.floor(Math.random()*(quotes.length));
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
-
-//	document.body.style.backgroundColor = 'red';
 	document.body.style.backgroundColor=colors[randomNumber];
 	document.getElementById('quoteDisplay').style.borderColor=colors[randomNumber];
-
+	//document.getElementById('quoteDisplay').style.display = 'block';
+	//document.getElementById('quoteDisplay').style.fadeIn(1000);
+	document.getElementById('quoteDisplay').style.display = 'block';
+document.getElementById('quoteDisplay').clientHeight; // Forces the browser to "reflow"
+document.getElementById('quoteDisplay').style.opacity = 1;
 /*var color = Math.floor(Math.random() * colors.length);
 		var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', '#472E32', '#BDBB99', '#77B1A9', '#73A857'];
 	$("html body").animate({
         backgroundColor: colors[color],
         color: colors[color]
       }, 1000);*/
-}
+      return quotes[randomNumber];
+      
+  }
+
+  /*function tweet(){
+  	document.getElementById('tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text='+quotes[randomNumber]).attr('target', '_blank');
+  	return false;
+  }*/
+/*var currentQuote='';
+  function newQuote(){
+  	var randomNumber = 	Math.floor(Math.random()*(quotes.length));
+  	
+  	currentQuote=quotes[randomNumber];
+  	$('#quoteDisplay').html(currentQuote);
+  	$('#tweetQuote').attr('href', 'https://twitter.com/intent/tweet?text='+currentQuote).attr('target', '_blank');
+
+  }
+
+  $(function() {
+	$('#randomQuote').click(function() {
+		newQuote();
+	});
+});
+*/

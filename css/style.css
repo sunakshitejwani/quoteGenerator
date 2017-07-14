@@ -1,10 +1,11 @@
 .quote-box {
-  border-radius:10px;
-  border-color:#fff;
+  border-radius:20px;
+  border-color:black;
+  border: 5px solid;
   position:relative;
   margin:1% auto auto auto;
-  width:650px;
-  padding:40px 50px;
+  width:750px;
+  padding:30px 40px;
   display:table;
   background-color:#000;
   opacity: 0.9;
@@ -15,23 +16,27 @@
       margin-right: 0.4em;
     }
     text-align:center;
-    width:650px;
+    width:750px;
     height:auto;
     clear:both;
     font-weight:500;
-    font-size:1.15em;
+    font-size:1.1em;
+    font-family:courier;
 
+}
+#clickm{
+	margin-right: -10px;
 }
 .heading{
 	position: relative;
 	margin-top: -20px;
 }
 .box-on-top{
-	height: 20px;
+	height: 10px;
 	width: 100%;
 	background-color: #fff;
-	padding-top:20px;
-	margin-top: -10px;
+	padding-top:5px 0px -5px 0px;
+	margin-top: 10px;
 	background-color:white;
 	opacity:0.5;
 }

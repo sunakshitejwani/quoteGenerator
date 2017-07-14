@@ -11,7 +11,12 @@ var quotes=[
 "The real opportunity for success lies within the person and not in the job.",
 "Look at the sparrows; they do not know what they will do in the next moment. Let us literally live from moment to moment."
 ];
+var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 function newQuote(){
+
 	var randomNumber = 	Math.floor(Math.random()*(quotes.length));
 	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+
+//	document.body.style.backgroundColor = "red";
+	document.body.style.backgroundColor=colors[randomNumber];
 }

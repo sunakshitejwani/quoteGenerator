@@ -1,9 +1,40 @@
 .quote-box {
-  border-radius:3px;
+  border-radius:10px;
+  border-color:#fff;
   position:relative;
-  margin:8% auto auto auto;
-  width:450px;
+  margin:1% auto auto auto;
+  width:650px;
   padding:40px 50px;
   display:table;
-  background-color:#fff;
+  background-color:#000;
+  opacity: 0.9;
+  color: #fff;
+  text-align:center;
+  i{
+      font-size:1.0em;
+      margin-right: 0.4em;
+    }
+    text-align:center;
+    width:650px;
+    height:auto;
+    clear:both;
+    font-weight:500;
+    font-size:1.15em;
+
+}
+.heading{
+	position: relative;
+	margin-top: -20px;
+}
+.box-on-top{
+	height: 20px;
+	width: 100%;
+	background-color: #fff;
+	padding-top:20px;
+	margin-top: -10px;
+	background-color:white;
+	opacity:0.5;
+}
+body{
+	background-color: #000;
 }
